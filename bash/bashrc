@@ -11,3 +11,4 @@ xterm*|rxvt*)
 esac
 
 . $HOME/dotfiles/rc/bin
+. $HOME/dotfiles/rc/go
