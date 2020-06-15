@@ -12,4 +12,5 @@ esac
 
 . $HOME/dotfiles/rc/bin
 . $HOME/dotfiles/rc/go
+. $HOME/dotfiles/rc/pyenv
 . $HOME/dotfiles/rc/rbenv
