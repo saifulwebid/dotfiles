@@ -1,5 +1,5 @@
-# Minimize Bash primary prompt
-PS1='${debian_chroot:+($debian_chroot)}\[\033[01;34m\]\w\[\033[00m\]\$ '
+# Customize Bash primary prompt
+PS1='${debian_chroot:+($debian_chroot)}\[\033[36m\][\t] \[\033[01;34m\]\w\[\033[00m\]\$ '
 
 # Reapply xterm title definition as we redefined PS1
 case "$TERM" in
