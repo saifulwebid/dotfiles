@@ -1,0 +1,4 @@
+# Use GNU coreutils installed from MacPorts
+if [ -d "/opt/local/libexec/gnubin" ]; then
+    export PATH="/opt/local/libexec/gnubin:$PATH"
+fi
