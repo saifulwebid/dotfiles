@@ -15,3 +15,7 @@ esac
 . $HOME/dotfiles/rc/go
 . $HOME/dotfiles/rc/pyenv
 . $HOME/dotfiles/rc/rbenv
+
+# Include Bukalapak bashrc
+[ -r $HOME/Bukalapak/dotfiles/bash/bashrc ] && \
+    . $HOME/Bukalapak/dotfiles/bash/bashrc

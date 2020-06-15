@@ -6,3 +6,7 @@ autoload -Uz +X bashcompinit && bashcompinit
 . $HOME/dotfiles/rc/go
 . $HOME/dotfiles/rc/pyenv
 . $HOME/dotfiles/rc/rbenv
+
+# Include Bukalapak zshrc
+[ -r $HOME/Bukalapak/dotfiles/zsh/zshrc ] && \
+    . $HOME/Bukalapak/dotfiles/zsh/zshrc
