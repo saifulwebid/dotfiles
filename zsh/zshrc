@@ -2,3 +2,5 @@
 . $HOME/dotfiles/rc/go
 . $HOME/dotfiles/rc/pyenv
 . $HOME/dotfiles/rc/rbenv
+
+autoload -Uz compinit && compinit
