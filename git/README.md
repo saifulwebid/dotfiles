@@ -1,6 +1,6 @@
 # git
 
-Initialize:
+Initialize by executing these commands:
 
 ```sh
 ln -s ~/dotfiles/git/gitconfig ~/.gitconfig
