@@ -12,3 +12,4 @@ esac
 
 . $HOME/dotfiles/rc/bin
 . $HOME/dotfiles/rc/go
+. $HOME/dotfiles/rc/rbenv
