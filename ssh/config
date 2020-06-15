@@ -1,3 +1,7 @@
+Host *
+	IdentityFile ~/.ssh/id_ed25519
+	IdentitiesOnly yes
+
 Host liana
     HostName liana.saiful.web.id
     User saiful
