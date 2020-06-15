@@ -1,3 +1,5 @@
 [user]
 	name = Muhammad Saiful Islam
 	email = muhammad@saiful.web.id
+[url "git@github.com:"]
+	insteadOf = https://github.com/
