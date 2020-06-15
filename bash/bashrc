@@ -9,3 +9,5 @@ xterm*|rxvt*)
 *)
     ;;
 esac
+
+. $HOME/dotfiles/rc/bin
