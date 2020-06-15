@@ -1,7 +1,8 @@
+autoload -Uz compinit && compinit
+autoload -Uz +X bashcompinit && bashcompinit
+
 . $HOME/dotfiles/rc/bin
 . $HOME/dotfiles/rc/coreutils
 . $HOME/dotfiles/rc/go
 . $HOME/dotfiles/rc/pyenv
 . $HOME/dotfiles/rc/rbenv
-
-autoload -Uz compinit && compinit
