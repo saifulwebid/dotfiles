@@ -1,4 +1,13 @@
-PROMPT='%2~ %# '
+autoload -Uz vcs_info
+zstyle ':vcs_info:*' enable git
+zstyle ':vcs_info:git*' formats " %{$fg[green]%}(%b)%{$reset_color%}"
+
+precmd() {
+    vcs_info
+}
+
+setopt prompt_subst
+PROMPT='%2~${vcs_info_msg_0_} %# '
 
 autoload -Uz compinit && compinit
 autoload -Uz +X bashcompinit && bashcompinit
