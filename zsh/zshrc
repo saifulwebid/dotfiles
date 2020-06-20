@@ -8,7 +8,7 @@ precmd() {
 }
 
 setopt prompt_subst
-PROMPT='%{$fg[blue]%}%2~%{$reset_color%}${vcs_info_msg_0_} %# '
+PROMPT='%{$fg[blue]%}[%*]%{$reset_color%} %2~${vcs_info_msg_0_} %# '
 
 autoload -Uz compinit && compinit
 autoload -Uz +X bashcompinit && bashcompinit
