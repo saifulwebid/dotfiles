@@ -6,5 +6,5 @@ Host liana
     HostName liana.saiful.web.id
     User saiful
 
-Host *
+Match all
     Include ~/Bukalapak/dotfiles/ssh/config
