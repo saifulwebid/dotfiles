@@ -23,6 +23,9 @@ setopt HIST_IGNORE_DUPS
 . $HOME/dotfiles/rc/pyenv
 . $HOME/dotfiles/rc/rbenv
 
+# This should be included after PATH initialized
+. $HOME/dotfiles/rc/pip
+
 # Include Bukalapak zshrc
 [ -r $HOME/Bukalapak/dotfiles/zsh/zshrc ] && \
     . $HOME/Bukalapak/dotfiles/zsh/zshrc
