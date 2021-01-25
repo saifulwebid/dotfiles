@@ -20,7 +20,3 @@ esac
 
 # This should be included after PATH initialized
 . $HOME/dotfiles/rc/pip
-
-# Include Bukalapak bashrc
-[ -r $HOME/Bukalapak/dotfiles/bash/bashrc ] && \
-    . $HOME/Bukalapak/dotfiles/bash/bashrc

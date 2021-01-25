@@ -11,5 +11,3 @@
 	prune = true
 [pull]
 	ff = only
-[includeIf "gitdir:~/Bukalapak/"]
-	path = ~/Bukalapak/dotfiles/git/gitconfig
