@@ -7,15 +7,22 @@ if ! test -e git; then
     return
 fi
 
-if test ~/dotfiles/git/gitconfig -ef ~/.gitconfig && test ~/dotfiles/git/gitignore -ef ~/.gitignore; then
+CONFIG_HOME="$XDG_CONFIG_HOME"
+if [ -z "$CONFIG_HOME" ]; then
+    CONFIG_HOME=~/.config
+fi
+
+if test ~/dotfiles/git/gitconfig -ef $CONFIG_HOME/git/config && test ~/dotfiles/git/gitignore -ef $CONFIG_HOME/git/ignore; then
     echo "git found and configured already; skipping..."
     return
 fi
 
 echo "git found and not configured; configuring..."
 
-rm -f ~/.gitconfig
-ln -s ~/dotfiles/git/gitconfig ~/.gitconfig
+mkdir -p $CONFIG_HOME/git
 
-rm -f ~/.gitignore
-ln -s ~/dotfiles/git/gitignore ~/.gitignore
+rm -f $CONFIG_HOME/git/config
+ln -s ~/dotfiles/git/gitconfig $CONFIG_HOME/git/config
+
+rm -f $CONFIG_HOME/git/ignore
+ln -s ~/dotfiles/git/gitignore $CONFIG_HOME/git/ignore
