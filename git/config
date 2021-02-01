@@ -9,3 +9,5 @@
 	prune = true
 [pull]
 	ff = only
+[includeIf "gitdir:~/WarTek/"]
+	path = ~/WarTek/dotfiles/git/config
