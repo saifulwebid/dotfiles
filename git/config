@@ -11,3 +11,5 @@
 	ff = only
 [includeIf "gitdir:~/WarTek/"]
 	path = ~/WarTek/dotfiles/git/config
+[includeIf "gitdir:~/go/pkg/mod/cache/vcs/"]
+	path = ~/WarTek/dotfiles/git/config
