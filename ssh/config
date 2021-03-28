@@ -6,5 +6,8 @@ Host liana
     HostName liana.saiful.web.id
     User saiful
 
+Host zia
+    User ms
+
 Match all
     Include ~/WarTek/dotfiles/ssh/config
