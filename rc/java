@@ -2,4 +2,5 @@ if ! command -v /usr/libexec/java_home >/dev/null; then
     return
 fi
 
-export JAVA_HOME=$(/usr/libexec/java_home)
+/usr/libexec/java_home >/dev/null 2>&1 && \
+	export JAVA_HOME=$(/usr/libexec/java_home)
