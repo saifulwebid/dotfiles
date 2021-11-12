@@ -16,6 +16,7 @@ _dotfiles_current_shell=bash
 . $HOME/dotfiles/rc/coreutils
 . $HOME/dotfiles/rc/gcloud
 . $HOME/dotfiles/rc/go
+. $HOME/dotfiles/rc/istioctl
 . $HOME/dotfiles/rc/java
 . $HOME/dotfiles/rc/ls
 . $HOME/dotfiles/rc/npm
