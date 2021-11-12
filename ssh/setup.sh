@@ -14,5 +14,6 @@ fi
 
 echo "ssh found and not configured; configuring..."
 
+mkdir -p ~/.ssh
 rm -f ~/.ssh/config
 ln -s ~/dotfiles/ssh/config ~/.ssh/config
