@@ -16,8 +16,11 @@ autoload -Uz +X bashcompinit && bashcompinit
 # Prevent contiguous duplicate history entries.
 setopt HIST_IGNORE_DUPS
 
+_dotfiles_current_shell=zsh
+
 . $HOME/dotfiles/rc/bin
 . $HOME/dotfiles/rc/coreutils
+. $HOME/dotfiles/rc/gcloud
 . $HOME/dotfiles/rc/go
 . $HOME/dotfiles/rc/java
 . $HOME/dotfiles/rc/ls
@@ -31,3 +34,5 @@ setopt HIST_IGNORE_DUPS
 # Include WarTek bashrc	
 [ -r $HOME/WarTek/dotfiles/zsh/zshrc ] && \
     . $HOME/WarTek/dotfiles/zsh/zshrc
+
+unset _dotfiles_current_shell

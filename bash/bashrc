@@ -10,8 +10,11 @@ xterm*|rxvt*)
     ;;
 esac
 
+_dotfiles_current_shell=bash
+
 . $HOME/dotfiles/rc/bin
 . $HOME/dotfiles/rc/coreutils
+. $HOME/dotfiles/rc/gcloud
 . $HOME/dotfiles/rc/go
 . $HOME/dotfiles/rc/java
 . $HOME/dotfiles/rc/ls
@@ -25,3 +28,5 @@ esac
 # Include WarTek bashrc	
 [ -r $HOME/WarTek/dotfiles/bash/bashrc ] && \
     . $HOME/WarTek/dotfiles/bash/bashrc
+
+unset _dotfiles_current_shell
