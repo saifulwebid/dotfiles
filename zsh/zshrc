@@ -24,6 +24,7 @@ _dotfiles_current_shell=zsh
 . $HOME/dotfiles/rc/go
 . $HOME/dotfiles/rc/istioctl
 . $HOME/dotfiles/rc/java
+. $HOME/dotfiles/rc/kubectl
 . $HOME/dotfiles/rc/ls
 . $HOME/dotfiles/rc/npm
 . $HOME/dotfiles/rc/pyenv
