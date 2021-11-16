@@ -22,6 +22,7 @@ _dotfiles_current_shell=zsh
 . $HOME/dotfiles/rc/coreutils
 . $HOME/dotfiles/rc/gcloud
 . $HOME/dotfiles/rc/go
+. $HOME/dotfiles/rc/helm
 . $HOME/dotfiles/rc/istioctl
 . $HOME/dotfiles/rc/java
 . $HOME/dotfiles/rc/kubectl
