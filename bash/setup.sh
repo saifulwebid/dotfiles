@@ -7,13 +7,12 @@ if ! test -e bash; then
     return
 fi
 
-if grep ". ~/dotfiles/bash/bashrc" ~/.bashrc >/dev/null 2>&1; then
+if test ~/dotfiles/bash/bashrc -ef ~/.bashrc; then
     echo "bash found and configured already, skipping..."
     return
 fi
 
 echo "bash found and not configured; configuring..."
 
-echo "# START saifulwebid dotfile configuration on $TIMESTAMP" >> ~/.bashrc
-echo ". ~/dotfiles/bash/bashrc" >> ~/.bashrc
-echo "# END saifulwebid dotfile configuration" >> ~/.bashrc
+rm -f ~/.bashrc
+ln -s ~/dotfiles/bash/bashrc ~/.bashrc
