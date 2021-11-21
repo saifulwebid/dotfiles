@@ -27,6 +27,7 @@ _dotfiles_current_shell=zsh
 . $HOME/dotfiles/rc/java
 . $HOME/dotfiles/rc/kubectl
 . $HOME/dotfiles/rc/ls
+. $HOME/dotfiles/rc/macports
 . $HOME/dotfiles/rc/npm
 . $HOME/dotfiles/rc/pyenv
 . $HOME/dotfiles/rc/rbenv
