@@ -7,7 +7,7 @@ if ! test -e zsh; then
     return
 fi
 
-if test ~/dotfiles/zsh/zshrc -ef ~/.zshrc; then
+if test ~/dotfiles/zsh/zshrc -ef ~/.zshrc && test ~/dotfiles/zsh/zprofile -ef ~/.zprofile; then
     echo "zsh found and configured already, skipping..."
     return
 fi
@@ -16,3 +16,6 @@ echo "zsh found and not configured; configuring..."
 
 rm -f ~/.zshrc
 ln -s ~/dotfiles/zsh/zshrc ~/.zshrc
+
+rm -f ~/.zprofile
+ln -s ~/dotfiles/zsh/zprofile ~/.zprofile
