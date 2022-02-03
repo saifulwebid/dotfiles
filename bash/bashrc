@@ -10,6 +10,9 @@ xterm*|rxvt*)
     ;;
 esac
 
+HISTSIZE=10000 # default: 500 as per bash 3.2 on macOS
+HISTFILESIZE=$HISTSIZE
+
 _dotfiles_current_shell=bash
 
 . $HOME/dotfiles/rc/bin
