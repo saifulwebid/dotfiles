@@ -2,7 +2,7 @@
 
 TIMESTAMP=$(date "+%Y-%m-%d %H:%M:%S")
 
-if ! test -e ssh; then
+if ! command -v ssh >/dev/null; then
     echo "ssh not found; skipping..."
     return
 fi

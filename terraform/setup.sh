@@ -2,7 +2,7 @@
 
 TIMESTAMP=$(date "+%Y-%m-%d %H:%M:%S")
 
-if ! test -e terraform; then
+if ! command -v terraform >/dev/null; then
     echo "terraform not found; skipping..."
     return
 fi

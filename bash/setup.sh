@@ -2,7 +2,7 @@
 
 TIMESTAMP=$(date "+%Y-%m-%d %H:%M:%S")
 
-if ! test -e bash; then
+if ! command -v bash >/dev/null; then
     echo "bash not found; skipping..."
     return
 fi

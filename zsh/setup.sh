@@ -2,7 +2,7 @@
 
 TIMESTAMP=$(date "+%Y-%m-%d %H:%M:%S")
 
-if ! test -e zsh; then
+if ! command -v zsh >/dev/null; then
     echo "zsh not found; skipping..."
     return
 fi

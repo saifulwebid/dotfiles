@@ -2,7 +2,7 @@
 
 TIMESTAMP=$(date "+%Y-%m-%d %H:%M:%S")
 
-if ! test -e vim; then
+if ! command -v vim >/dev/null; then
     echo "vim not found; skipping..."
     return
 fi

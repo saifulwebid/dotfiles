@@ -2,7 +2,7 @@
 
 TIMESTAMP=$(date "+%Y-%m-%d %H:%M:%S")
 
-if ! test -e npm; then
+if ! command -v npm >/dev/null; then
     echo "npm not found; skipping..."
     return
 fi
