@@ -1,0 +1,7 @@
+if [ -f "/opt/local/share/fzf/shell/key-bindings.$_dotfiles_current_shell" ]; then
+    source "/opt/local/share/fzf/shell/key-bindings.$_dotfiles_current_shell"
+fi
+
+if [ -f "/opt/local/share/fzf/shell/completion.$_dotfiles_current_shell" ]; then
+    source "/opt/local/share/fzf/shell/completion.$_dotfiles_current_shell"
+fi
