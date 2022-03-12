@@ -9,6 +9,8 @@
 	prune = true
 [pull]
 	ff = only
+[alias]
+	gone = ! "git fetch --all --prune; git branch -vv | awk '/: gone]/{print $1}' | xargs git branch -D"
 [includeIf "gitdir:~/WarTek/"]
 	path = ~/WarTek/dotfiles/git/config
 [includeIf "gitdir:~/go/pkg/mod/cache/vcs/"]
