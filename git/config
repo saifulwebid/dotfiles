@@ -12,7 +12,8 @@
 [push]
 	default = current
 [alias]
-	done = ! "git switch $(cat $(git rev-parse --git-dir)/refs/remotes/origin/HEAD | cut -d'/' -f4); git pull; git branch -vv | awk '/: gone]/{print $1}' | xargs git branch -D"
+	done = ! "git default; git pull; git branch -vv | awk '/: gone]/{print $1}' | xargs git branch -D"
+	default = ! "git switch $(cat $(git rev-parse --git-dir)/refs/remotes/origin/HEAD | cut -d'/' -f4)"
 [includeIf "gitdir:~/WarTek/"]
 	path = ~/WarTek/dotfiles/git/config
 [includeIf "gitdir:~/go/pkg/mod/cache/vcs/"]
