@@ -36,6 +36,7 @@ _dotfiles_current_shell=zsh
 . $HOME/dotfiles/rc/npm
 . $HOME/dotfiles/rc/pyenv
 . $HOME/dotfiles/rc/rbenv
+. $HOME/dotfiles/rc/tfenv
 
 # This should be included after PATH initialized
 . $HOME/dotfiles/rc/pip
