@@ -28,6 +28,7 @@ _dotfiles_current_shell=bash
 . $HOME/dotfiles/rc/ls
 . $HOME/dotfiles/rc/macports
 . $HOME/dotfiles/rc/npm
+. $HOME/dotfiles/rc/nvm
 . $HOME/dotfiles/rc/pyenv
 . $HOME/dotfiles/rc/rbenv
 . $HOME/dotfiles/rc/tfenv
