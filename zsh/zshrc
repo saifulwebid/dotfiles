@@ -13,7 +13,7 @@ PROMPT='%{$fg[blue]%}[%*]%{$reset_color%} %2~${vcs_info_msg_0_} %# '
 autoload -Uz compinit && compinit
 autoload -Uz +X bashcompinit && bashcompinit
 
-export HISTSIZE=10000 # default: 1000 as per zsh 5.8 on macOS
+export HISTSIZE=100000 # default: 1000 as per zsh 5.8 on macOS
 export SAVEHIST=$HISTSIZE
 
 # Prevent contiguous duplicate history entries.
