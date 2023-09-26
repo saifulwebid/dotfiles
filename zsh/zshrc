@@ -21,9 +21,12 @@ setopt HIST_IGNORE_DUPS
 
 _dotfiles_current_shell=zsh
 
+. $HOME/dotfiles/rc/macports
+
 . $HOME/dotfiles/rc/android
 . $HOME/dotfiles/rc/bin
 . $HOME/dotfiles/rc/coreutils
+. $HOME/dotfiles/rc/fnm
 . $HOME/dotfiles/rc/fzf
 . $HOME/dotfiles/rc/gcloud
 . $HOME/dotfiles/rc/go
@@ -32,9 +35,7 @@ _dotfiles_current_shell=zsh
 . $HOME/dotfiles/rc/java
 . $HOME/dotfiles/rc/kubectl
 . $HOME/dotfiles/rc/ls
-. $HOME/dotfiles/rc/macports
 . $HOME/dotfiles/rc/npm
-. $HOME/dotfiles/rc/nvm
 . $HOME/dotfiles/rc/pyenv
 . $HOME/dotfiles/rc/rbenv
 . $HOME/dotfiles/rc/tfenv
