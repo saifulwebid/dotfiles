@@ -8,6 +8,3 @@ Host liana
 
 Host zia
     User ms
-
-Match all
-    Include ~/WarTek/dotfiles/ssh/config

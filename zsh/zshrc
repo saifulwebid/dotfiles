@@ -44,8 +44,4 @@ _dotfiles_current_shell=zsh
 # This should be included after PATH initialized
 . $HOME/dotfiles/rc/pip
 
-# Include WarTek bashrc	
-[ -r $HOME/WarTek/dotfiles/zsh/zshrc ] && \
-    . $HOME/WarTek/dotfiles/zsh/zshrc
-
 unset _dotfiles_current_shell

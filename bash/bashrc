@@ -38,8 +38,4 @@ _dotfiles_current_shell=bash
 # This should be included after PATH initialized
 . $HOME/dotfiles/rc/pip
 
-# Include WarTek bashrc	
-[ -r $HOME/WarTek/dotfiles/bash/bashrc ] && \
-    . $HOME/WarTek/dotfiles/bash/bashrc
-
 unset _dotfiles_current_shell
