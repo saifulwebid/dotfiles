@@ -1,3 +1,8 @@
+# Use GNU coreutils installed from Homebrew
+if [ -d "/opt/homebrew/opt/coreutils/libexec/gnubin" ]; then
+    export PATH="/opt/homebrew/opt/coreutils/libexec/gnubin:$PATH"
+fi
+
 # Use GNU coreutils installed from MacPorts
 if [ -d "/opt/local/libexec/gnubin" ]; then
     export PATH="/opt/local/libexec/gnubin:$PATH"
