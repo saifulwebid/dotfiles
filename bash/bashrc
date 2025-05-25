@@ -15,6 +15,7 @@ HISTFILESIZE=$HISTSIZE
 
 _dotfiles_current_shell=bash
 
+. $HOME/dotfiles/rc/brew
 . $HOME/dotfiles/rc/macports
 
 . $HOME/dotfiles/rc/android

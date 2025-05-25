@@ -21,6 +21,7 @@ setopt HIST_IGNORE_DUPS
 
 _dotfiles_current_shell=zsh
 
+. $HOME/dotfiles/rc/brew
 . $HOME/dotfiles/rc/macports
 
 . $HOME/dotfiles/rc/android
