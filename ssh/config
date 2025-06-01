@@ -1,6 +1,5 @@
 Match final
-	IdentityFile ~/.ssh/id_ed25519
-	IdentitiesOnly yes
+    IdentityAgent "~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"
 
 Host liana
     HostName liana.saiful.web.id
